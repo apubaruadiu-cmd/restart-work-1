@@ -1,0 +1,53 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-right: auto;
+  margin-left: auto;
+}
+.hero-section {
+  background-image: url("./Assets/banner-image.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgb(5 8 38 / 90%), rgb(30 31 72 / 40%));
+  z-index: 0;
+}
+.position-relative {
+  position: relative;
+}
+.active-link {
+  color: #422ad5;
+}
+#tab-container button {
+    border-radius: 30px;
+    color: rgb(83, 83, 83);
+}
+
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1320px;
+  }
+}
