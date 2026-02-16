@@ -38,7 +38,8 @@
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
                         <li><a href="index.html" class="text-sm font-medium text-neutral-500">Home</a></li>
-                        <li><a href="products.html" class="text-sm font-medium text-neutral-500 active-link">Products</a></li>
+                        <li><a href="products.html"
+                                class="text-sm font-medium text-neutral-500 active-link">Products</a></li>
                         <li><a class="text-sm font-medium text-neutral-500">About</a></li>
                         <li><a class="text-sm font-medium text-neutral-500">Contact</a></li>
                     </ul>
@@ -77,31 +78,11 @@
                     <h2 class="text-4xl font-bold">Our Products</h2>
                 </div>
                 <div id="tab-container" class="flex justify-center gap-3 mb-8 flex-wrap">
-                   <button class="btn">All</button> 
-                   <button class="btn">Electronics</button> 
-                   <button class="btn">Jewlry</button> 
-                   <button class="btn">jhgjh mnnm</button> 
-                   <button class="btn">kljlkjdf ljljkl;s</button> 
-                </div>
-                <div class="trending-card-wrapper grid lg:grid-cols-4 grid-cols-1 gap-4">
-                    <div class="card bg-base-100 shadow-sm">
-                        <figure>
-                            <img src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                                alt="Shoes" />
-                        </figure>
-                        <div class="card-body">
-                            <div class="badge-rating flex justify-between items-center mb-4">
-                                <div class="badge badge-soft badge-primary">Mens Clothing</div>
-                                <div class="text-gray-500"><i class="fa-solid fa-star text-warning"></i> 3.9 (120)</div>
-                            </div>
-                            <h2 class="card-title truncate font-medium text-2xl block">I am the Title</h2>
-                            <div class="product-price font-bold text-xl">$786898798</div>
-                            <div class="card-actions mt-6">
-                                <button class="btn btn-outline flex-1"><i class="fa-regular fa-eye"></i> Details</button>
-                                <button class="btn btn-primary flex-1"><i class="fa-solid fa-cart-shopping"></i> Add</button>
-                            </div>
-                        </div>
+                    <div>
+                        <button id="btn-all" onclick="loadAllProducts()" class="btn">All</button>
                     </div>
+                </div>
+                <div id="products-container" class="trending-card-wrapper grid lg:grid-cols-4 grid-cols-1 gap-6">
                 </div>
             </div>
         </section>

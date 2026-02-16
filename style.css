@@ -38,7 +38,10 @@
 }
 #tab-container button {
     border-radius: 30px;
-    color: rgb(83, 83, 83);
+}
+.active {
+  background-color: #422ad5;
+  color: #fff;
 }
 
 @media (min-width: 1400px) {
